@@ -1,0 +1,255 @@
+/*Fuentes locales*/
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("../fonts/CaviarDreams.ttf");
+}
+
+/*Fuentes via cdn*/
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;700&display=swap');
+
+/*Estilos del header*/
+
+header {
+  background-color: #E57C23;
+}
+
+#logo{
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 0;
+  margin: 10px 10px 10px 10px;
+}
+
+#titulo {
+  display: inline-block;
+  font-size: 24px;
+  margin-left: 600px;
+  margin-right: 600px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.redes-sociales {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right; 
+}
+
+/*Estilos del body*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav {
+  background-color: #E8AA42;
+  color: black;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  padding: 20px;
+}
+
+#imagen {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.blog-noticia {
+  margin-bottom: 20px;
+  background-color: white;
+  width: 68%;
+  
+}
+
+.noticia {
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.blog-noticia h4 {
+  border-bottom: 1px solid black;
+}
+
+#resumenNoticias {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+
+#resumenNoticias a{
+  text-decoration: none;
+  
+}
+
+#tituloContacto{
+  color: dimgrey;
+  text-align: center;
+  font-family: "CaviarDreams";
+}
+
+#formularioContacto{
+  background-color: white;
+  width: 30%;
+  padding-right: 30px;
+  margin-top: 50px;
+  margin-right: 300px;
+  font-style: normal;
+  font-family: "CaviarDreams";
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+}
+
+#btnEnviar{
+  text-align: center;
+}
+
+#logoContacto{
+  margin-right: 10px;
+  margin-left: 400px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+#paginasNoticias{
+  text-align: center;
+}
+
+#videoBienvenida{
+  text-align: center;
+  margin: 50px;
+}
+
+#sobreNosotros{
+  margin: 30px;
+  text-align: justify;
+}
+
+#imagenNosotros{
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+}
+
+#sobreNosotros aside{
+  background-color: transparent;
+}
+
+#sobreNosotros h2{
+  margin: 10px;
+}
+
+#sobreNosotros p{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#imagenSobreNosotros{
+  padding: 10px;
+}
+
+#sobreNosotros{
+  background-color: white;
+}
+
+#organigrama{
+  text-align: center;
+}
+
+.caja{
+  width: 220px;
+  height: 220px;
+  background-color: grey;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+#parteSuperior div{
+  display: inline-block;
+}
+
+#divisiones div{
+  display: inline-block;
+}
+
+#cuerpoServicios{
+  background-color: white;
+  margin: 10px;
+  text-align: justify;
+  height: 750px;
+}
+
+.servicios{
+  height: 200px;
+  padding: 20px;
+}
+
+#imagenDerecha{
+  background-color: transparent;
+  width: 20%;
+  font-style: oblique;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+}
+
+#imagenIzquierda{
+  background-color: transparent;
+  width: 20%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: left;
+}
+
+/*Estilos del footer*/
+
+footer {
+  background-color: #025464;
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+}
+
+footer p{
+  font-family: "CaviarDreams";
+  color: white;
+}
+
+footer a{
+  font-family: 'Geologica', sans-serif;
+  text-decoration: none;
+  color: white;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fundación SCP</title>
+        <link rel="shortcut icon" href="../img/favicon.png">
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+
+    <!-- Inicia el body-->
+
+    <body>
+
+        <!-- Inicia el header -->
+
+        <header id="header">
+            <!-- Logo de la pagina-->
+            <div id="logo">
+                <img src="../img/Logo.png" alt="Logo">
+            </div>
+            <!-- titulo de la pagina-->
+            <h1 id="titulo">Fundación SCP</h1>
+            <!-- redes sociales-->
+            <div class="redes-sociales">
+                <a href="https://facebook.com" target="_blank"><img src="../img/facebook.png" alt="facebook"></a>
+                <a href="https://twitter.com" target="_blank"><img src="../img/twitter.png" alt="twitter"></a>
+                <a href="https://telegram.org/" target="_blank"><img src="../img/telegram.png" alt="telegram"></a>
+            </div>
+        </header>
+
+        <!--Menú de navegación-->
+
+        <nav id="menu">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./sobreNosotros.html">Sobre nosotros</a></li>
+                <li><a href="./servicios.html">Nuestros Servicios</a></li>
+                <li><a href="./Noticias.html">Noticias</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!--Contenido-->
+        <main>
+            <h2 id="tituloContacto">Contacte a la fundación</h2>
+            <aside id="formularioContacto">
+                <form action="" id="formulario">
+                    <!-- Tabla para que queden aliniados los label con los input-->
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="nombre">Nombre</label>
+                            </td>
+                            <td>
+                                <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="direccion">Dirección</label>
+                            </td>
+                            <td>
+                                <input type="text" id="direccion" placeholder="Ingrese su direccion">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="correo">Correo</label>
+                            </td>
+                            <td>
+                                <input type="email" id="correo" placeholder="Ingrese su correo" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="telefono">Telefono</label>
+                            </td>
+                            <td>
+                                <input type="tel" id="telefono" placeholder="Ingrese su telefono">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="mensaje">Mensaje</label>
+                            </td>
+                            <td>
+                                <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Si esta reportando un incidente ingrese la mayor cantidad de información relacionada como la cantidad de personas involucradas, caracteristicas, daños, etc."></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="btnEnviar" colspan="2">
+                                <button>Enviar</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </aside>
+            <img src="../img/contacto.png" alt="Logo de Contacto" id="logoContacto">
+        </main>
+
+        <!-- footer-->
+        <footer id="footer">
+            <!-- menu de footer-->
+            <div class="footer-menu">
+                <a href="../index.html">Inicio</a> |
+                <a href="./sobreNosotros.html">Sobre nosotros</a> |
+                <a href="./servicios.html">Nuestros Servicios</a> |
+                <a href="./Noticias.html">Noticias</a> |
+                <a href="./contacto.html">Contacto</a>
+            </div>
+            <!-- Mision y vision-->
+            <p>Misión: Nuestra misión es investigar, documentar y contener las anomalías SCP con el objetivo de proteger a la humanidad de sus efectos perjudiciales. Trabajamos incansablemente para asegurarnos de que estas anomalías no caigan en manos equivocadas y no pongan en peligro la estabilidad global. Nos comprometemos a utilizar métodos éticos y científicos rigurosos en nuestras actividades, colaborando con expertos y organizaciones afines en todo el mundo para enfrentar los desafíos que plantean las anomalías SCP.</p>
+            <p>Visión: La Fundación SCP se esfuerza por salvaguardar a la humanidad y protegerla de las anomalías anómalas y peligrosas que amenazan nuestra realidad. Buscamos comprender, contener y controlar estas entidades y fenómenos para garantizar la seguridad y la preservación del mundo tal como lo conocemos.</p>
+            <p>&copy; 2023 Fundación SCP. Todos los derechos reservados.</p>
+            <!-- Volver al head-->
+            <a href="#header">Volver al comienzo de la página</a>
+        </footer>
+    </body>
+</html>

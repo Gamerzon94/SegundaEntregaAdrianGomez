@@ -182,9 +182,20 @@ section {
   text-align: center;
 }
 
+#contenidoSobreNosotros{
+  display: grid;
+}
+
+#sobreNosotros{
+  display: grid;
+  grid-template-areas: "contenido aside"
+  "organigrama organigrama";
+}
+
 #videoBienvenida{
-  text-align: center;
-  margin: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
 }
 
 #sobreNosotros{
@@ -193,9 +204,12 @@ section {
 }
 
 #imagenNosotros{
-  padding-left: 15px;
-  margin-left: 15px;
-  float: right;
+  grid-area: aside;
+  margin-top: 20%;
+}
+
+#contenidoSobreNosotros{
+  grid-area: contenido;
 }
 
 #sobreNosotros aside{
@@ -220,24 +234,44 @@ section {
 }
 
 #organigrama{
-  text-align: center;
+  grid-area: organigrama;
+  display: grid;
+  grid-template-areas: 
+  "titulo titulo titulo"
+  "primer primer primer"
+  "segundo segundo segundo";
+  justify-content: center;
+}
+
+#parteSuperior{
+  grid-area: primer;
+  justify-self: center;
+}
+
+#tituloOrganigrama{
+  grid-area: titulo;
+  justify-self: center;
 }
 
 .caja{
-  width: 220px;
-  height: 220px;
+  width: 230px;
+  height: 230px;
   background-color: grey;
   padding: 10px;
   border-radius: 10px;
   margin: 10px;
   text-align: center;
+  transition: .5s;
 }
 
-#parteSuperior div{
-  display: inline-block;
+.caja:hover{
+  transform: scale(0.9);
+  box-shadow: 0 0 10px rgb(22, 22, 22);
 }
+
 
 #divisiones div{
+  grid-area: segundo;
   display: inline-block;
 }
 
@@ -310,7 +344,7 @@ footer a{
 
 /* MOVIL */
 
-@media  (max-width: 576px){
+@media  (max-width: 700px){
   /* HEADER */
   header {
     background-color: #E57C23;
@@ -336,6 +370,19 @@ footer a{
 
   .imagenContacto{
     display: none;
+  }
+
+  #imagenNosotros{
+    display: none;
+  }
+
+  #videoBienvenida iframe{
+    display: none;
+  }
+
+  #divisiones{
+    display: flex;
+    flex-direction: column;
   }
 
   /* FOOTER */

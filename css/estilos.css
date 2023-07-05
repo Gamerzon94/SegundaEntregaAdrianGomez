@@ -133,14 +133,19 @@ section {
   background-color: lightgray;
 }
 
-#resumenNoticias a{
-  text-decoration: none;
-  
+#resumenNoticias a:link{
+  color: cadetblue;
+}
+
+#resumenNoticias a:visited{
+  color: #025464;
 }
 
 .contactoContenido{
   display: grid;
+  justify-content: center;
   grid-template-areas: "imagen formulario";
+  grid-template-columns: 1fr 2fr;
 }
 
 .imagenContacto{
@@ -156,14 +161,9 @@ section {
 
 .formularioContacto{
   background-color: white;
-  padding-right: 30px;
-  margin-top: 50px;
-  margin-right: 300px;
   font-style: normal;
   font-family: "CaviarDreams";
-  padding-left: 15px;
-  margin-left: 15px;
-  align-items: center;
+  justify-content: center;
   display: grid;
   grid-area: formulario;
 }
@@ -176,13 +176,6 @@ section {
 
 #btnEnviar{
   text-align: center;
-}
-
-#logoContacto{
-  margin-right: 10px;
-  margin-left: 400px;
-  margin-top: 20px;
-  margin-bottom: 100px;
 }
 
 #paginasNoticias{
@@ -318,6 +311,16 @@ footer a{
 /* MOVIL */
 
 @media  (max-width: 576px){
+  /* HEADER */
+  header {
+    background-color: #E57C23;
+    padding: 10px;
+    display: grid;
+    justify-content: space-between;
+  }
+
+  /* BODY */
+
   #ContenidoPrincipal{
     grid-template-areas: "carrusel"
     "noticia"
@@ -335,12 +338,7 @@ footer a{
     display: none;
   }
 
-  header {
-    background-color: #E57C23;
-    padding: 10px;
-    display: grid;
-    justify-content: space-between;
-  }
+  /* FOOTER */
 
   footer {
     display: grid;

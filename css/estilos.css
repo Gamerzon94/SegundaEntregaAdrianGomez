@@ -297,3 +297,39 @@ footer a{
 .footer-subir{
   grid-area: return;
 }
+
+/* MOVIL */
+
+@media  (max-width: 576px){
+  #ContenidoPrincipal{
+    grid-template-areas: "carrusel"
+    "noticia"
+    "noticia"
+    "noticia"
+    "aside";
+  }
+
+  header {
+    background-color: #E57C23;
+    padding: 10px;
+    display: grid;
+    justify-content: space-between;
+  }
+
+  footer {
+    display: grid;
+    background-color: #025464;
+    padding: 10px;
+    text-align: center;
+    position: initial;
+    bottom: 0;
+    grid-template-areas: "menu"
+    "mision"
+    "return";
+  }
+
+  .footer-mision{
+    grid-area: mision;
+    display: none;
+  }
+}

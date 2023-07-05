@@ -11,39 +11,35 @@
 
 header {
   background-color: #E57C23;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #logo{
-  display: inline-block;
-  vertical-align: middle;
   width: 100px;
-  height: 100px;
-  padding: 10px;
-  border: 0;
-  margin: 10px 10px 10px 10px;
 }
 
 #titulo {
-  display: inline-block;
-  font-size: 24px;
-  margin-left: 600px;
-  margin-right: 600px;
-  vertical-align: middle;
-  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+  font-weight: bold;
+  padding-top: 15px;
 }
 
 .redes-sociales {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: right; 
+  display: flex;
+  align-items: center;
+}
+
+.redes-sociales a{
+  margin-right: 10px;
 }
 
 /*Estilos del body*/
 
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   background-image: url(../img/fondo.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,16 +72,47 @@ section {
   padding: 20px;
 }
 
+#ContenidoPrincipal{
+  display: grid;
+  grid-template-areas: "carrusel carrusel carrusel carrusel carrusel"
+  "noticia noticia noticia noticia aside"
+  "noticia noticia noticia noticia aside"
+  "noticia noticia noticia noticia aside";
+}
+
+#Carrusel{
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  grid-area: carrusel;
+}
+
+#carouselExampleCaptions{
+  width: 40%;
+}
+
+#carouselExampleCaptions h5{
+  color:black;
+  font-weight: bold;
+}
+
+#carouselExampleCaptions p{
+  color: black;
+  font-weight: bold;
+}
+
 #imagen {
   text-align: center;
   margin-bottom: 20px;
 }
 
+.contenedor-noticia{
+  grid-area: noticia;
+}
+
 .blog-noticia {
   margin-bottom: 20px;
   background-color: white;
-  width: 68%;
-  
 }
 
 .noticia {
@@ -98,11 +125,11 @@ section {
 }
 
 #resumenNoticias {
-  width: 30%;
+  grid-area: aside;
   padding-left: 15px;
   margin-left: 15px;
-  float: right;
   font-style: italic;
+  font-family: Geologica;
   background-color: lightgray;
 }
 
@@ -236,11 +263,13 @@ section {
 /*Estilos del footer*/
 
 footer {
+  display: grid;
   background-color: #025464;
   padding: 10px;
   text-align: center;
   position: sticky;
   bottom: 0;
+  grid-template-areas: "menu mision return";
 }
 
 footer p{
@@ -252,4 +281,19 @@ footer a{
   font-family: 'Geologica', sans-serif;
   text-decoration: none;
   color: white;
+}
+
+.footer-menu{
+  grid-area: menu;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-mision{
+  grid-area: mision;
+  display: flex;
+}
+
+.footer-subir{
+  grid-area: return;
 }

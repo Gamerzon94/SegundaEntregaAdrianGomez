@@ -279,29 +279,27 @@ section {
   background-color: white;
   margin: 10px;
   text-align: justify;
-  height: 750px;
 }
 
-.servicios{
-  height: 200px;
+.servicioImagenIzquierda{
   padding: 20px;
+  display: grid;
+  grid-template-areas: "aside texto";
 }
 
-#imagenDerecha{
-  background-color: transparent;
-  width: 20%;
-  font-style: oblique;
-  padding-left: 15px;
-  margin-left: 15px;
-  float: right;
+.servicioImagenDerecha{
+  padding: 20px;
+  display: grid;
+  grid-template-areas: "texto aside";
 }
 
-#imagenIzquierda{
-  background-color: transparent;
-  width: 20%;
-  padding-left: 15px;
-  margin-left: 15px;
-  float: left;
+.contenidoServicio{
+  padding: 20px;
+  grid-area: texto;
+}
+
+.imagenServicio{
+  grid-area: aside;
 }
 
 /*Estilos del footer*/
@@ -383,6 +381,20 @@ footer a{
   #divisiones{
     display: flex;
     flex-direction: column;
+  }
+
+  .servicioImagenIzquierda{
+    grid-template-areas: "texto"
+    "aside";
+  }
+
+  .servicioImagenDerecha{
+    grid-template-areas: "texto"
+    "aside";
+  }
+
+  .imagenServicio{
+    justify-self: center;
   }
 
   /* FOOTER */

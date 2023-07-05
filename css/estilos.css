@@ -5,7 +5,7 @@
 }
 
 /*Fuentes via cdn*/
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;700&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Geologica:wght@400;700&family=Poppins:wght@200&display=swap');
 
 /*Estilos del header*/
 
@@ -113,6 +113,7 @@ section {
 .blog-noticia {
   margin-bottom: 20px;
   background-color: white;
+  font-family: 'Cairo';
 }
 
 .noticia {
@@ -124,15 +125,15 @@ section {
 }
 
 .noticia h2{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium';
 }
 
 .noticia h4{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
 }
 
 .noticia p{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
 }
 
 .blog-noticia h4 {
@@ -140,7 +141,7 @@ section {
 }
 
 #paginasNoticias{
-  font-family: 'Poppins', Times, serif;
+  font-family: 'Poppins';
 }
 
 #paginasNoticias a{
@@ -207,6 +208,11 @@ section {
 
 #contenidoSobreNosotros{
   display: grid;
+  grid-area: contenido;
+}
+
+#contenidoSobreNosotros p{
+  font-family: 'Cairo';
 }
 
 #sobreNosotros{
@@ -229,10 +235,6 @@ section {
 #imagenNosotros{
   grid-area: aside;
   margin-top: 20%;
-}
-
-#contenidoSobreNosotros{
-  grid-area: contenido;
 }
 
 #sobreNosotros aside{
@@ -319,6 +321,7 @@ section {
 .contenidoServicio{
   padding: 20px;
   grid-area: texto;
+  font-family: 'Cairo';
 }
 
 .imagenServicio{
@@ -348,7 +351,6 @@ footer p{
 }
 
 footer a{
-  font-family: 'Geologica', sans-serif;
   text-decoration: none;
   color: white;
 }
@@ -357,11 +359,16 @@ footer a{
   grid-area: menu;
   display: flex;
   flex-direction: column;
+  font-family: 'CaviarDreams';
 }
 
 .footer-mision{
   grid-area: mision;
   display: flex;
+}
+
+.footer-mision p{
+  margin: 5px;
 }
 
 .footer-subir{

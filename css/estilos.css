@@ -5,7 +5,7 @@
 }
 
 /*Fuentes via cdn*/
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;700&family=Poppins:wght@200&display=swap');
 
 /*Estilos del header*/
 
@@ -116,12 +116,35 @@ section {
 }
 
 .noticia {
-  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  padding: 10px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.noticia h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.noticia h4{
+  font-family: 'Poppins', sans-serif;
+}
+
+.noticia p{
+  font-family: 'Poppins', sans-serif;
 }
 
 .blog-noticia h4 {
   border-bottom: 1px solid black;
+}
+
+#paginasNoticias{
+  font-family: 'Poppins', Times, serif;
+}
+
+#paginasNoticias a{
+  color: black;
 }
 
 #resumenNoticias {
@@ -300,6 +323,11 @@ section {
 
 .imagenServicio{
   grid-area: aside;
+}
+
+#contenidoNoticias{
+  display: flex;
+  flex-direction: column;
 }
 
 /*Estilos del footer*/
